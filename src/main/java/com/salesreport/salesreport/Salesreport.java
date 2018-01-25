@@ -41,8 +41,12 @@ public class Salesreport
             salestax = 0.05;
             totalamountdue = salesamount + (salesamount*salestax);
         }
-        return "Sales Report " + "<br/>" + customernumber +"  ,  "+ customername +"  ,   " +
-                salesamount +"  ,  " +  salestax  + "  ,  " + totalamountdue;
+        else
+        {
+            System.out.println("Print a valid tax code");
+        }
+        return "Sales Report " + "<br/>" + customernumber +"  |  "+ customername +"  |   " +
+                salesamount +"  |  " +  salestax  + "  |  " + totalamountdue;
        }
 
 }
